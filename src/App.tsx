@@ -21,7 +21,7 @@ function App() {
             <Slider reviews={[
                 {
                     id: 1,
-                    name: "Виктор КОмаров",
+                    name: "Виктор Комаров",
                     jobPosition: 'Продавец Wildberries',
                     text: 'Просто потрясающе, я заговорил на английском так, как сама не предполагал',
                     image: image,
