@@ -1,17 +1,18 @@
 .slider{
     background: #357EFE;
-    display: flex;
     max-width: 1000px;
-    max-height: 400px;
+    height: 400px;
     width: 100%;
     position: relative;
     border-radius: 8px;
     margin: 20px;
+    overflow: hidden;
 }
-
 .slide{
     display: flex;
     width: 100%;
+    height: 100%;
+    transition: opacity ease-in-out;
 }
 .left{
     flex: 1;
@@ -19,4 +20,60 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+.right{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.text{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: white;
+    margin-bottom: 34px;
+}
+.name{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 140%;
+    color: white;
+}
+.jobPosition {
+    font-size: 17px;
+    line-height: 140%;
+    color: white;
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.arrow:hover{
+    opacity: 1;
+}
+.arrowLeft{
+    left: 24px;
+    top: calc(50% - 20px);
+    transform: rotate(180deg);
+}
+.arrowRight{
+    right: 24px;
+    top: calc(50% - 20px);
+}
+
+.fade-out{
+    opacity: 0;
+}
+.fade-in{
+    opacity: 1;
 }
