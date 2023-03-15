@@ -2,7 +2,7 @@ import {SliderProps} from "./slider.props";
 import styles from './slider.module.css';
 import cn from 'classnames';
 import {useState} from "react";
-import { ReactComponent as Arrow } from './arrow.svg'
+import Arrow from './arrow.svg'
 
 export const Slider = ({ reviews }: SliderProps)=>{
     const [slide, setSlide] = useState<number>(0)
@@ -15,14 +15,14 @@ export const Slider = ({ reviews }: SliderProps)=>{
                 <div className={styles.jobPosition}>{reviews[slide].jobPosition}</div>
             </div>
             <div className={styles.right}
-                 style={{ backgroundImage: 'url(${reviews[slide].image})'}}>
+                 style={{ backgroundImage: `url(${reviews[slide].image})`}}>
             </div>
         </div>
         <div className={cn(styles.arrow, styles.arrowLeft)}>
-            <Arrow/>
+            <img src={Arrow}/>
         </div>
         <div className={cn(styles.arrow, styles.arrowRight)}>
-            <Arrow/>
+            {/*<Arrow/>*/}
         </div>
     </div>
 }

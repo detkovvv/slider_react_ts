@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import './App.css'
-import image from './foto.jpg'
+import image from './image.jpg'
 import {Slider} from "./components/slider/slider";
 
 
